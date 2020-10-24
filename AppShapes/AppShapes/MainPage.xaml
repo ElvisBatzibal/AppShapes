@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AppShapes.MainPage"
+             Title="Xamarin.Forms Shapes">
+    <StackLayout VerticalOptions="CenterAndExpand">
+        <Label HorizontalOptions="CenterAndExpand" Text="Xamarin.Forms Shapes" TextColor="Blue"></Label>
+        <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+            <Polygon 
+             Points="40,10 70,80 10,50"
+             Fill="AliceBlue"
+             Stroke="Green"
+             StrokeThickness="5" />
+            <Rectangle 
+             Fill="Red"
+             WidthRequest="150"
+             HeightRequest="50"
+             HorizontalOptions="Start" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Polyline Points="0,0 10,30, 15,0 18,60 23,30 35,30 40,0 43,60 48,30 100,30"
+            Stroke="Red" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+        <StackLayout.Resources>
+            <Style TargetType="Ellipse">
+                <Setter Property="Fill" Value="#33222222"/>
+                <Setter Property="WidthRequest" Value="20"/>
+                <Setter Property="HeightRequest" Value="20"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+            </Style>
+            <Style TargetType="Line">
+                <Setter Property="Stroke" Value="#33222222"/>
+                <Setter Property="X2" Value="40"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+            </Style>
+        </StackLayout.Resources>
+
+        <Ellipse Fill="#FF9900" />
+        <Line />
+        <Ellipse />
+        <Line />
+        <Ellipse />    
+
+        
+    </StackLayout>
+    </StackLayout>
+</ContentPage>
